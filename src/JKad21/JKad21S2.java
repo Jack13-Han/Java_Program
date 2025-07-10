@@ -21,7 +21,7 @@ public class JKad21S2 {
         for (int i = 0; i < names.length; i++) {
             System.out.print(names[i] + "\t");
             for (int j = 0; j < scores[i].length; j++) {
-                System.out.print(scores[i][j] + "\t\t");
+                System.out.print(scores[i][j] + "\t");
             }
             System.out.println();
         }

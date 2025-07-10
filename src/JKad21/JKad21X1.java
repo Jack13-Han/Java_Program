@@ -20,47 +20,28 @@ public class JKad21X1 {
 
 
         System.out.println("メゾンECC の建物数 :"+(buil.length));
-        System.out.println("0 号館の階数 :"+buil[0].length);
-        System.out.println("0 階の部屋数 :"+buil[0][0].length);
-        System.out.println("1 階の部屋数 :"+buil[0][1].length);
-        System.out.println("2 階の部屋数 :"+buil[0][2].length);
-        System.out.println();
 
-        System.out.println("1 号館の階数 :"+buil[1].length);
-        System.out.println("0 階の部屋数 :"+buil[1][0].length);
-        System.out.println("1 階の部屋数 :"+buil[1][1].length);
-        System.out.println();
-
-
-        System.out.println("0 号館の住人を表示します！");
-        System.out.println("0階:");
-        for (int i = 0; i < buil[0][0].length; i++) {
-            System.out.println(i +":" +buil[0][0][i]);
-        }
-        System.out.println();
-
-        System.out.println("1階:");
-        for (int j = 0; j < buil[0][1].length; j++) {
-            System.out.println(j +":" +buil[0][1][j]);
+        for (int i = 0; i < buil.length; i++) {
+            System.out.println(i+"号館の階数 :"+ buil[i].length);
+            for (int j = 0; j < buil[i].length; j++) {
+                System.out.println(j+"階の部屋数 :"+buil[i][j].length);
+            }
+            System.out.println();
         }
 
-        System.out.println();
 
-        System.out.println("2階:");
-        for (int j = 0; j < buil[0][2].length; j++) {
-            System.out.println(j +":" +buil[0][2][j]);
-        }
-        System.out.println();
+        for (int i = 0; i < buil.length; i++) {
+            System.out.println(i+"号館の住人を表示します！");
 
-        System.out.println("1 号館の住人を表示します！");
-        System.out.println("0 階 :");
-        for (int i = 0; i < buil[1][0].length; i++) {
-            System.out.println(i+":"+buil[1][0][i]);
+            for (int j = 0; j < buil[i].length; j++) {
+                System.out.println(j+"階 :");
+                for (int k = 0; k < buil[i][j].length; k++) {
+                    System.out.println(k+":"+buil[i][j][k]);
+                }
+
+            }
+            
         }
 
-        System.out.println("1階 :");
-        for (int j = 0; j < buil[1][1].length; j++) {
-            System.out.println(j+":"+buil[1][1][j]);
-        }
     }
 }
