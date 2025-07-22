@@ -25,7 +25,6 @@ public class JKad25S2 {
         if (str2.length()>str1.length()){
             return -1;
         }
-        if (str2.isEmpty()) return 0;
 
         for (int i = 0; i < str1.length()-str2.length(); i++) {
             boolean match=true;

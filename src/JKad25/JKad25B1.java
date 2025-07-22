@@ -5,7 +5,7 @@ public class JKad25B1 {
         for (int i = 0; i <= 0xff; i++) { // 0x00~0xffまでループ
             switch(i) {
                 case '\b','\t','\n','\r': // '\b'（バックスペース）、'\t'（タブ）、'\n'（改行）、'\r'（復帰）の場合
-                    System.out.print("\t" + "x"); // ".（ドット）を表示する"
+                    System.out.print("\t" + "."); // ".（ドット）を表示する"
                     break;
                 default: // それ以外の場合
                     System.out.print("\t" + (char)i); // 数字をchar型に変換して表示する。
