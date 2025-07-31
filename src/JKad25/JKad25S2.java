@@ -14,7 +14,6 @@ public class JKad25S2 {
         int index=strContains(input1,input2);
 
         if (index != -1) {
-
             System.out.println((index + 1) + "文字目から同じ文字列列を見つけました！");
         } else {
             System.out.println("同じ文字列列は見つかりませんでした！");

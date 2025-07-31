@@ -5,26 +5,15 @@ public class JKad26S2 {
     final static int BUZZ = 0b0010; // 2 進数
     public static void main(String[] args) {
         for (int i = 1; i <= 40; i++) {
-            int result = isFizz(i) | isBuzz(i); // OR operation to combine flags
-
-
-
-            switch (result) {
-                case FIZZ:
-                    System.out.println("わん！");
-                    break;
-                case BUZZ:
-                    System.out.println("にゃん！");
-                    break;
-                case FIZZ | BUZZ:
-                    System.out.println("わにゃん！");
-                    break;
-
-                default:
-                    System.out.println("！");
-                    break;
+            if(isFizz(i)== FIZZ & isBuzz(i)== BUZZ ){
+                System.out.println("わにゃん");
+            } else if (isFizz(i) ==FIZZ) {
+                System.out.println("わん！");
+            } else if (isBuzz(i)==BUZZ) {
+                System.out.println("にゃん");
+            }else {
+                System.out.println(i + " ");
             }
-            System.out.print(i + " ");
         }
     }
     public static int isFizz(int i) {
